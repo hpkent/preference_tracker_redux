@@ -13,16 +13,12 @@
       }
     }
   },
-  modal: {
-    duck,
-    isOpen
-  },
-  ducks: {
-    [duckId]: {
+  notes: {
+    [noteId]: {
       lastUpdated,
       info: {
         avatar,
-        duckId,
+        noteId,
         name,
         text,
         timestamp,
@@ -30,41 +26,12 @@
       }
     }
   },
-  likeCount: {
-    [duckId]: 0
-  },
-  usersDucks: {
+  usersNotes: {
     isFetching,
     error,
     [uid]: {
       lastUpdated,
-      duckIds: [duckId, duckId, duckId]
-    }
-  },
-  usersLikes: {
-    duckid: true,
-  }
-  feed: {
-    isFetching,
-    error,
-    newDucksAvailable,
-    duckIdsToAdd: [duckId, duckId],
-    duckIds: [duckid, duckId, duckId]
-  }
-  replies: {
-    isFetching,
-    error,
-    [duckId]: {
-      lastUpdated,
-      replies: {
-        [replyId]: {
-          name,
-          reply,
-          uid,
-          timestamp,
-          avatar
-        }
-      }
+      noteIds: [noteId, noteId, noteId]
     }
   },
   listeners: {

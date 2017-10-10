@@ -4,48 +4,22 @@
     uid
     avatar
 
-/notifications
-  uid
-    notificationId
-      type
-      author
-      authorAvatar
-      uid (of author)
-      duckId
-      timestamp
-
-/ducks
-  duckId
+/notes
+  noteId
     avatar
-    duckId
+    noteId
     name
     text
     timestamp
-    uid (of duck author)
+    uid (of note author)
 
-/likeCount
-  duckId
-    0
-
-/usersDucks
+/usersNotes
   uid
-    duckId
+    noteId
       avatar
-      duckId
+      noteId
       name
       text
       timestamp
-      uid (of duck author)
+      uid (of note author)
 
-/replies
-  duckId
-    replyId
-      name
-      comment
-      uid
-      timestamp
-      avatar
-
-/usersLikes
-  uid
-    duckId: true
